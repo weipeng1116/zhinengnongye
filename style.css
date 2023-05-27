@@ -1,0 +1,227 @@
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav{
+    height: 35px;
+    background: rgb(103, 203, 228);
+}
+.nav>li{
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    /*background: pink;*/
+    border-right:2px solid white ;
+}
+a{
+    text-decoration: none;
+}
+.nav ul{
+    background: rgb(101, 171, 199);
+    display: none;
+}
+body {
+    background: linear-gradient(45deg, #fbfbfc, transparent);
+    
+}
+.login {
+    width: 600px;
+    height: 400px;
+    background:rgba(255, 251, 251, 0.6);
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    display: flex;
+}
+.left{
+    width: 200px;
+    height: 400px;
+    background-size: cover;
+    background-image:url(./img/456.jpeg);
+    opacity: 80%;
+}
+.right {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.right h1{
+    margin-top: 20px;
+    text-align: center;
+}
+.right .userinfo {
+    width: 280px;
+    height: 20px;
+    padding: 10px;
+    margin: 30px 20px;
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.right .submit{
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(45deg, #a29bfe, transparent);
+    transform: translateX(65px);
+    margin-top: 5px;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #888888;
+}
+.right .submit:hover{
+    opacity: 90%;
+}
+.help{
+    width: 300px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    transform: translateX(25px);
+}
+#imga{
+    width: 700px;
+    height: 400px;
+    border: 2px solid rgb(151, 165, 29);
+    position: relative;
+}
+#imga img{
+    display: block;
+    width: 700px;
+    height: 400px;
+    top: 30%;
+}
+#imga div{
+    border: 1px solid rgb(100, 164, 236);
+    background: #4aee8f;
+    padding: 1px 5px;
+    position: absolute;
+    bottom: 8px;
+    font-weight: bold;
+}
+body{
+    margin:0;
+    padding:0%;
+    font-family: sans-serif;
+}
+
+.box{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 500px;
+    height: 50px;
+    transform: translate(-50%,-50%);
+    
+}
+.input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: 5s;
+}
+.peng{
+    background: #a29bfe;
+    width: 340px;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+    
+}
+.wei{
+    position: relative;
+    left: -5px;
+    border-radius:0 25px 25px 0;
+    width: 150px;
+    height: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #4a4ac4;
+    color: aqua;
+   
+}
+.con{
+    width: 556px;
+    height: 400px;
+    border: 2px solid rgb(151, 165, 29);
+    position: relative;
+    float: right;
+}
+.con img{
+    display: block;
+    width: 500px;
+    height: 200px;
+    top: 20%;
+}
+p{
+    color: blue;
+    top: 0;
+    left: 242px;
+    position: absolute;
+}
+#imgb img{
+    width: 200px;
+    height: 100px;
+    
+    left: 30%;
+}
+.zi{
+    width: 798px;
+    height: 400px;
+    border: 1px solid rgba(90, 161, 233, 0.984);
+    position: relative;
+    float:left;
+}
+.myban{
+    width: 1261px;
+    height: 600px;
+    border: 1px solid rgb(206, 76, 148);
+}
+.myban img{
+    width: 420px;
+    height: 300px;
+    float: left;
+}
+.dao{
+    width: 1261px;
+    height: 50px;
+    border: 1px solid #f48ca6;
+    background-color: cyan;
+}
+.wu{
+    width: 461px;
+    height: 400px;
+    border: 1px solid rgba(247, 248, 249, 0.984);
+    position: relative;
+    float:right;
+}
+.lu{
+    width: 1261px;
+    height: 50px;
+    border: 1px solid rgba(4, 1, 5, 0.813);
+    float: right;
+    background-color: #5f75c7fe;
+}
+.fei{
+    width: 460px;
+    height: 400px;
+    border: 1px solid rgba(90, 161, 233, 0.984);
+    position: relative;
+    left: 800px;
+}

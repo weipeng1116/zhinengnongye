@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.2/echarts.min.js" integrity="sha512-weWXHm0Ws2cZKjjwugRMnnOAx9uCP/wUVf84W7/fXQimwYUK28zPDGPprDozomQLpKv6U99xN9PI9+yLI9qxNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <div id="main" style="width: 1000px;height: 500px;"></div>
+  <p><h2>农作物在科技和传统的对比</h2>
+    背景:
+    代代相传的家族传统
+    Bones是家里的第四代种植者，他现在耕耘的这片土地靠近南达科他州Parker郡，是他的曾祖父在1879年挣下的祖业。与这个地区的许多其他种植者一样，Bones的家庭也一直坚持多元化经营。除了播种有近7000英亩的玉米和大豆，Bones家族还参与了当地的一家乳制品合作社，负责管理肉牛育种业务。他与自己的两个兄弟、一个妹夫以及三个侄子一同管理家族企业。
+    Bones说：“与拥有专业技能的合作伙伴联手，使我们的组合实现多样化经营。”
+    他的兄弟Jim Bones和侄子Dan Bones负责制定下一年的农场计划，选择杂交品种、作物保护产品和肥料。他的另一个兄弟Steve Bones和侄子Matt Bones负责设备的运行和维护。他的妹夫Lyle Van Hove负责市场营销和风险管理。Lyle的儿子Mike Van Hove是维修部的负责人，并根据需要制造专用工具和设备。最后，他们的肉牛放牧人是Monte Plucker。
+    改变：
+    他们的一些决定建立在经验和传统的基础上，如果要决定播种时机，则需要密切关注天气以及其他事项。不过，Bones家族多年来积累的经验已充分表明，亲自去农田里观察，永远都是确定是否达到播种条件的高效办法。太过潮湿也不行，因为拖拉机会陷到泥里。除了确保地面能够承受机器的重量（太紧实的土壤会阻碍种子的发育），另一个关键问题是确保播种机上附加的种子传输管道和施肥管道不要被泥浆堵塞。
+    技术意味着更精准
+    一旦决定开始种植，Bones家族企业会依靠一些先进的技术。他使用两台36排式播种机，每台每小时可播种约40英亩的面积。一整天下来，他的团队可完成800-900英亩的播种任务。
+    用来牵引播种设备的拖拉机带有令人震撼的数字读取阵列。今年冬天，在播种时操作机器的Matt Bones和Mike Van Hove建议他们的合伙人将其中一台播种机升级，每一行都装配上先进的传感器。这些传感器可以通过每秒多达200次读数，监测并调整土壤下的压力，以保持适宜种子生长的2英寸播种深度。这项技术有助于确保埋进土壤的每一粒种子都有机会发挥其生长潜力。
+    结果：
+    播种开始后，问题的关键转移到规划和后勤管理。Bones和他的团队每天早上都要协调播种、配置播种设备、装满种子和基肥，然后还要将补充仓装满。或许对Bones来说，最重要的事情是开车去当地的咖啡馆，为自己的七人团队买好午饭和晚饭，然后到农场送饭。
+    Bones说：“团队高效运转，周详规划，连用餐时间都计算得刚刚好。他们真是太了不起了！”
+  </p>
+  <a href="index.html"><h4>回到首页</h4></a>
+</body>
+<script>
+
+    var chartDom = document.getElementById('main');
+    var myChart = echarts.init(chartDom);
+    var option;
+    
+    option = {
+      title: {
+        text: '智能种植情况'
+      },
+      tooltip: {
+        trigger: 'axis'
+      },
+      legend: {
+        data: ['小麦', '玉米', '水稻', '马铃薯', '高粱']
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      toolbox: {
+        feature: {
+          saveAsImage: {}
+        }
+      },
+      xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun','Aug','Sep','Oct','Nov','Dec']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [
+        {
+          name: '小麦',
+          type: 'line',
+          stack: 'Total',
+          data: [500, 549, 630, 784, 679, 848, 967 ,800,790,1346,1432,1426]
+        },
+        {
+          name: '玉米',
+          type: 'line',
+          stack: 'Total',
+          data: [220, 456, 442, 568, 679, 549, 764,788,832,847,976,1006,1455]
+        },
+        {
+          name: '水稻',
+          type: 'line',
+          stack: 'Total',
+          data: [150, 232, 201, 154, 190, 330, 410,677,879,980,1007,654,]
+        },
+        {
+          name: '马铃薯',
+          type: 'line',
+          stack: 'Total',
+          data: [320, 332, 301, 334, 390, 330, 320,687,888,900,1034,984]
+        },
+        {
+          name: '高粱',
+          type: 'line',
+          stack: 'Total',
+          data: [820, 932, 901, 934, 1290, 1330, 1320,1675,1784,1599,1796,1006]
+        }
+      ]
+    };
+    
+    option && myChart.setOption(option);</script>
+
+</html>

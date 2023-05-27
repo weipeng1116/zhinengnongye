@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.2/echarts.min.js" integrity="sha512-weWXHm0Ws2cZKjjwugRMnnOAx9uCP/wUVf84W7/fXQimwYUK28zPDGPprDozomQLpKv6U99xN9PI9+yLI9qxNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div style="background: url(./img/imgr.jpg) 10% 62%;">
+    <div class="box" style="background-color: aliceblue;">
+        <form>
+            <input type="text" class="peng input"  name="" placeholder="">
+            <input type="submit" class="wei input" name="" value="sousuo">
+        </form>
+    </div>
+    <h1><p>智慧农业</p></h1>
+    <div id="imgb">
+        <img src="./img/imge.jpg">
+    </div>
+</div>
+    <ul class="nav">
+        <li><a href="login.html">点击登录</a></li>
+        <li><a href="wendu.html">农产品</a></li>
+        <li><a href="">智能农具</a></li>
+        <li><a href="">农业新闻</a></li>
+        <li><a href="weather.html">天气情况</a></li>
+        <li id="son1"><a href="">温度</a>
+    </ul>
+    <div class="con">
+        <img src="./img/imgq.jpg"><h4>智慧农业是结合传统农业，将物联网、大数据、云计算、人工智能、5G等新兴技术切实地运用到传统农业中，可以通过对现代农业生产环境的智能感知和数据分析，实现农业生产精准化管理和可视化诊断。</h4>
+    </div>
+    <div id="imga">
+        <img src="./img/imga.jpg" width="600px">
+        <div class="xiao 1" >1</div>
+        <div class="xiao 2" style="left: 20px;">2</div>
+        <div class="xiao 3" style="left:40px">3</div>
+        <div class="xiao 4" style="left:60px">4</div>
+        <div class="xiao 5" style="left:80px">5</div>
+    </div>
+    <div class="dao">
+    <marquee><h2>智慧农业是将物联网技术应用到传统农业中，是结合传感器和各大系统通过手机端或者电脑端度农业生产进行远程控制，大大提高了农业生产的自动化程度，实现了远程监控、预测报警、自动调节、数据分析存储等功能。</h2></marquee>
+    </div>
+    <div class="myban">
+        <img src="./img/imgt.jpg">
+        <img src="./img/imgy.jpg" >
+        <img src="./img/imgu.jpg" >
+       <h3> 精准农业是智慧农业的第一站，其主要依靠 5S 技术，当前已经发展成熟。5S 技术包括 遥感、地理信息系统、全球定位系统、数字摄影测量系统、专家系统等，目前在农业中的应用已经较为成熟。在 5S 技术精准定位导航的作用下，耕种、收割等适合中大型农机作业的简单场景有望率先落地。大数据、物联网等技术也在农业领域中逐渐应用，主要用于智能施肥、灌溉设备的构建，在 5S 技术的配合下，有望推动播种、施肥、灌溉、 除虫等场景快速落地。
+云计算、人工智能、5G 农业应用当前正处于探索阶段，是农业 3.0 后期迈向 4.0 的关 键。在 3.0 基本实现农业自动化、精准化作业的基础上，通过 5G 网络传输海量物联网 数据，由人工智能和云计算技术分析决策后，可在大范围内将农业资源配置深度优化， 进一步降低人工参与度，使生产作业更智能、管理更精细、决策更精确。</h3>    
+<h3>农业无人机可集播撒、喷洒、测绘等功能于一体，精准高效的完成多项农事。农业无人 机同样以高精度定位导航技术为核心，辅以摄像头、雷达等传感器实现精准定位导航、 空中避障、地形探测等操作，搭配大容量智能药肥箱，以完成施肥、除虫等农事活动。 此外，农业无人机可配备多镜头传感器，快速执行农田果园高清测绘任务、快速拼接高 清地图，全面提升农业无人机作业效率。</h3>
+</div>
+     <div class="zi">
+         <p><h2>一:物联网技术</h2>
+            物联网技术是将传感器、GPS系统、全球地理信息系统、感应器、激光扫描等组成。可以构成一个相对完整全面的物联网管理体系
+        <h2>二:智慧农业系统</h2>
+        智慧农业是指利用多种现代农业技术，实现对农业的自动化、精细化、全面化、智能化、科学化管理。智慧农业系统运用GPS系统、地理信息系统，等实现对农业的数据分析整理和实时监控，更清晰直观的了解农业作物的长势情况。</p>
+         <h2>三:智慧农业系统解决方案</h2>
+         1:安防急需提高、注意防火防盗
+         2:人工成本高，急需机械自动化
+         3:病虫害发病快，传统防治难以为继
+         4:需要对外展示的窗口，助力宣传
+     </div>
+     <div class="fei"  id="main" style="width: 460px;height: 400px;"></div>
+     <div class="lu">
+     <footer>
+        <a href="https://baike.baidu.com/item/%E6%99%BA%E6%85%A7%E5%86%9C%E4%B8%9A%E7%B3%BB%E7%BB%9F/24230215?fr=aladdin">智慧农业系统</a>
+        <a href="https://www.baidu.com/?tn=02003390_10_hao_pg">百度一下</a>
+     </footer>
+    </div>
+</body>
+<script>
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+  title: {
+    text: '农作物对比'
+  },
+  legend: {
+    data: ['外界种植', '科技种植']
+  },
+  radar: {
+    // shape: 'circle',
+    indicator: [
+      { name: '温度', max: 6500 },
+      { name: '水分', max: 16000 },
+      { name: '光照', max: 30000 },
+      { name: '营养物质', max: 38000 },
+      { name: 'ph值', max: 52000 },
+      { name: '二氧化碳浓度', max: 25000 }
+    ]
+  },
+  series: [
+    {
+      name: 'Budget vs spending',
+      type: 'radar',
+      data: [
+        {
+          value: [4200, 3000, 20000, 26000, 50000, 18000],
+          name: '外界种植'
+        },
+        {
+          value: [5000, 14000, 28000, 35000, 42000, 21000],
+          name: '科技种植'
+        }
+      ]
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+</script>
+</html>
